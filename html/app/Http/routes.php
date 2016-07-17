@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return View::make('welcome');
 });
+
+
+Route::get('/clinics', ['as' => 'clinics_list', function () {
+    $clinics = DB::table('clinics')->paginate(15);
+
+    return View::make('clinics_list', ['clinics' => $clinics]);
+}]);
