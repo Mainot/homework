@@ -159,6 +159,9 @@ return [
         // Это для генератора миграцией по имеющейся БД
         Way\Generators\GeneratorsServiceProvider::class,
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+
+        // Для IDE'шки вспомогалка
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
