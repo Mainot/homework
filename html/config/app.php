@@ -156,6 +156,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Sharding service
+        App\Providers\ShardServiceProvider::class,
+
         // Это для генератора миграцией по имеющейся БД
         Way\Generators\GeneratorsServiceProvider::class,
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,

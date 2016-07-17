@@ -1,7 +1,7 @@
 <div class="clinics_list">
     <ul>
         <?php foreach ($clinics as $clinic): ?>
-            <li><?php echo $clinic->title; ?></li>
+            <li><a href="{{ route('clinics', ['clinic_id' => $clinic->id]) }}"><?php echo $clinic->title; ?></a></li>
         <?php endforeach; ?>
     </ul>
 </div>
